@@ -19,7 +19,11 @@ body {
   padding: 0;
   box-sizing: border-box;
 } */
-
+/* .border-x{
+  border-left: 2px solid white;
+  border-right: 2px solid white;
+ padding: 30px !important;
+} */
 a:focus,
 input:focus,
 textarea:focus,
@@ -1667,7 +1671,7 @@ p {
   margin: 0 15px;
 }
 
-.about-section .about-content .counter-up .single-counter::before, .about-section .about-content .counter-up .single-counter::after {
+.about-section .about-content .counter-up .single-counter-1::before, .about-section .about-content .counter-up .single-counter-1::after {
   content: '';
   position: absolute;
   width: 2px;
@@ -1678,29 +1682,29 @@ p {
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .about-section .about-content .counter-up .single-counter::before, .about-section .about-content .counter-up .single-counter::after {
+  .about-section .about-content .counter-up .single-counter-1::before, .about-section .about-content .counter-up .single-counter-1::after {
     opacity: 0;
   }
 }
 
 @media (max-width: 767px) {
-  .about-section .about-content .counter-up .single-counter::before, .about-section .about-content .counter-up .single-counter::after {
+  .about-section .about-content .counter-up .single-counter-1::before, .about-section .about-content .counter-up .single-counter-1::after {
     opacity: 0;
   }
 }
 
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  .about-section .about-content .counter-up .single-counter::before, .about-section .about-content .counter-up .single-counter::after {
+  .about-section .about-content .counter-up .single-counter-1::before, .about-section .about-content .counter-up .single-counter-1::after {
     opacity: 1;
   }
 }
 
-.about-section .about-content .counter-up .single-counter::before {
-  left: -50%;
+.about-section .about-content .counter-up .single-counter-1::before {
+  left:-50px;
 }
 
-.about-section .about-content .counter-up .single-counter::after {
-  right: -50%;
+.about-section .about-content .counter-up .single-counter-1::after {
+  right: -50px;
 }
 
 .about-section .about-content .counter-up .single-counter h3 {
@@ -1722,6 +1726,15 @@ p {
 @media (max-width: 767px) {
   .delivery-img {
     margin-bottom: 50px;
+  }
+  .about-section .about-content .counter-up{
+    width: 100%;
+  }
+  .about-section .about-content .counter-up .single-counter-1::after{
+    left: 0px;
+  }
+  .about-section .about-content .counter-up .single-counter-1::before{
+    left: 0px;
   }
 }
 
